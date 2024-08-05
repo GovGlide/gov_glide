@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gov_glide/static/css/main.16e5aca7.css",
-    "main.js": "/gov_glide/static/js/main.90c05882.js",
+    "main.js": "/gov_glide/static/js/main.d221f8ef.js",
     "static/media/img_2.jpg": "/gov_glide/static/media/img_2.c40bae5a31fb3ac94043.jpg",
     "static/media/img.png": "/gov_glide/static/media/img.1034fb8c8b48b07981cf.png",
     "static/media/gates.png": "/gov_glide/static/media/gates.c3090e36b22c67c280ce.png",
@@ -16,10 +16,10 @@
     "index.html": "/gov_glide/index.html",
     "static/media/linkedin.svg": "/gov_glide/static/media/linkedin.2e5deedfc3d9bc583be943be3005d599.svg",
     "main.16e5aca7.css.map": "/gov_glide/static/css/main.16e5aca7.css.map",
-    "main.90c05882.js.map": "/gov_glide/static/js/main.90c05882.js.map"
+    "main.d221f8ef.js.map": "/gov_glide/static/js/main.d221f8ef.js.map"
   },
   "entrypoints": [
     "static/css/main.16e5aca7.css",
-    "static/js/main.90c05882.js"
+    "static/js/main.d221f8ef.js"
   ]
 }

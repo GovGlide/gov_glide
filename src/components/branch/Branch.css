@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.branch {
+    margin: 20px auto;
+}
+
+.branch_container {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.branch_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branch_text {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    color: #0047FF;
+}
+
+.branch_line_container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.branch_line {
+    max-width: 100%;
+}

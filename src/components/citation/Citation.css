@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+hr {
+    width: 180px;
+    height: 8px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.citation {
+    background-color: #0047FF;
+}
+
+.citation_container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.citation_right {
+    align-self: center;
+}
+
+.citation_text {
+    align-self: center;
+    font-family: Roboto, "sans-serif";
+    font-weight: lighter;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+.citation_gates {
+    display: flex;
+    align-items: center;
+    font-family: Roboto, "sans-serif";
+    font-weight: lighter;
+    font-size: 42px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.citation_crown {
+    position: absolute;
+    left: 210px;
+    bottom: 400px;
+}
+
+.brackets {
+    font-size: 72px;
+    font-family: Roboto, "sans-serif";
+}

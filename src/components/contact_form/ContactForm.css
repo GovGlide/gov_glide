@@ -1,0 +1,113 @@
+.contact_form {
+    background-color: #FFF59D;
+}
+
+.contact_form_container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact_form_title {
+    width: 900px;
+    font-family: Strong;
+    font-weight: lighter;
+    font-size: 84px;
+    line-height: 120px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.contact_form_info {
+    width: 370px;
+    height: 300px;
+    background-color: #0047FF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.contact_form_input {
+    width: 335px;
+    height: 60px;
+    font-size: 24px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.send_button {
+    width: 275px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0047FF;
+    color: #FFFFFF;
+    border: 1px solid #0047FF;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 24px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.send_button:hover {
+    background-color: #2AA4E8;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Roboto, "sans-serif";
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.close-button {
+    width: 275px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #0047FF;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.close-button:hover {
+    background-color: #2AA4E8;
+}

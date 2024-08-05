@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.slogan {
+    background-color: #FFFFFF;
+}
+
+.slogan_container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.slogan_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    color: #0047FF;
+    font-size: 62px;
+    text-align: center;
+}

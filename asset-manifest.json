@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/https//GovGlide.github.io/gov_glide/static/css/main.b7fc3cd1.css",
-    "main.js": "/https//GovGlide.github.io/gov_glide/static/js/main.d0afeab5.js",
-    "static/media/img_2.jpg": "/https//GovGlide.github.io/gov_glide/static/media/img_2.c40bae5a31fb3ac94043.jpg",
-    "static/media/img.png": "/https//GovGlide.github.io/gov_glide/static/media/img.1034fb8c8b48b07981cf.png",
-    "static/media/gates.png": "/https//GovGlide.github.io/gov_glide/static/media/gates.c3090e36b22c67c280ce.png",
-    "static/media/logo.svg": "/https//GovGlide.github.io/gov_glide/static/media/logo.c7ab5d48b872be8a2702522e1f25a067.svg",
-    "static/media/IBMPlexMono-Bold.ttf": "/https//GovGlide.github.io/gov_glide/static/media/IBMPlexMono-Bold.270fc7685a99d1197e53.ttf",
-    "static/media/figure.png": "/https//GovGlide.github.io/gov_glide/static/media/figure.11fa0dc05b248bb927a4.png",
-    "static/media/instagram.png": "/https//GovGlide.github.io/gov_glide/static/media/instagram.79535458a8a6d88f81d4.png",
-    "static/media/background.png": "/https//GovGlide.github.io/gov_glide/static/media/background.5300464f3abe791157ae.png",
-    "static/media/big_logo.png": "/https//GovGlide.github.io/gov_glide/static/media/big_logo.dfb8832f9555f46d4db0.png",
-    "static/media/whatsapp.svg": "/https//GovGlide.github.io/gov_glide/static/media/whatsapp.6b2171df86834f2496a3158e74b74e4d.svg",
-    "static/media/discord.svg": "/https//GovGlide.github.io/gov_glide/static/media/discord.eff862870f22f3e5c399ac21c123acb2.svg",
-    "index.html": "/https//GovGlide.github.io/gov_glide/index.html",
-    "static/media/linkedin.svg": "/https//GovGlide.github.io/gov_glide/static/media/linkedin.2e5deedfc3d9bc583be943be3005d599.svg",
-    "main.b7fc3cd1.css.map": "/https//GovGlide.github.io/gov_glide/static/css/main.b7fc3cd1.css.map",
-    "main.d0afeab5.js.map": "/https//GovGlide.github.io/gov_glide/static/js/main.d0afeab5.js.map"
+    "main.css": "/gov_glide/static/css/main.16e5aca7.css",
+    "main.js": "/gov_glide/static/js/main.a230a976.js",
+    "static/media/img_2.jpg": "/gov_glide/static/media/img_2.c40bae5a31fb3ac94043.jpg",
+    "static/media/img.png": "/gov_glide/static/media/img.1034fb8c8b48b07981cf.png",
+    "static/media/gates.png": "/gov_glide/static/media/gates.c3090e36b22c67c280ce.png",
+    "static/media/logo.svg": "/gov_glide/static/media/logo.c7ab5d48b872be8a2702522e1f25a067.svg",
+    "static/media/IBMPlexMono-Bold.ttf": "/gov_glide/static/media/IBMPlexMono-Bold.270fc7685a99d1197e53.ttf",
+    "static/media/figure.png": "/gov_glide/static/media/figure.11fa0dc05b248bb927a4.png",
+    "static/media/instagram.png": "/gov_glide/static/media/instagram.79535458a8a6d88f81d4.png",
+    "static/media/background.png": "/gov_glide/static/media/background.5300464f3abe791157ae.png",
+    "static/media/big_logo.png": "/gov_glide/static/media/big_logo.dfb8832f9555f46d4db0.png",
+    "static/media/whatsapp.svg": "/gov_glide/static/media/whatsapp.6b2171df86834f2496a3158e74b74e4d.svg",
+    "static/media/discord.svg": "/gov_glide/static/media/discord.eff862870f22f3e5c399ac21c123acb2.svg",
+    "index.html": "/gov_glide/index.html",
+    "static/media/linkedin.svg": "/gov_glide/static/media/linkedin.2e5deedfc3d9bc583be943be3005d599.svg",
+    "main.16e5aca7.css.map": "/gov_glide/static/css/main.16e5aca7.css.map",
+    "main.a230a976.js.map": "/gov_glide/static/js/main.a230a976.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7fc3cd1.css",
-    "static/js/main.d0afeab5.js"
+    "static/css/main.16e5aca7.css",
+    "static/js/main.a230a976.js"
   ]
 }

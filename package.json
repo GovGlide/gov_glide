@@ -2,7 +2,6 @@
   "name": "gov_glide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/GovGlide/govglide.github.io/gov_glide",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@fontsource/roboto": "^5.0.13",

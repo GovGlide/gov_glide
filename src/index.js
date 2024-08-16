@@ -4,16 +4,21 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainPage from './pages/main_page/MainPage';
 import AboutUs from "./pages/about_us/AboutUs";
+import NotFoundPage from "./pages/not_found/NotFound";
 
 
 const router = createBrowserRouter([
     {
-        path: '/main',
+        path: '/',
         element: <MainPage/>
     },
     {
         path: '/about_us',
         element: <AboutUs/>
+    },
+    {
+        path: '*',
+        element: <NotFoundPage/>
     }
 ]);
 

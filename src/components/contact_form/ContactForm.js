@@ -1,60 +1,96 @@
+import React, { forwardRef, useState } from 'react';
 import "./ContactForm.css";
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
-function ContactForm() {
-    const form = useRef();
-    const [isModalVisible, setIsModalVisible] = useState(false);
+const ContactForm = forwardRef((props, ref) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [error, setError] = useState('');
 
-    const sendEmail = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
+        setError('');
 
-        emailjs
-            .sendForm("service_woy5ee8", "template_vtn9jfp", form.current, "1QyUAIaCuQzn4dgpT")
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                    setIsModalVisible(true);
-                    e.target.reset(); // Сброс формы после успешной отправки
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
+        const formData = new FormData(e.target);
+
+        try {
+            const response = await fetch('https://formspree.io/f/xjkbewye', { // Замените на ваш Formspree URL
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
                 }
-            );
-    };
+            });
 
-    const closeModal = () => {
-        setIsModalVisible(false);
+            if (response.ok) {
+                setIsSubmitted(true);
+                e.target.reset(); // Сброс формы после успешной отправки
+            } else {
+                const result = await response.json();
+                setError(result.error || 'Что-то пошло не так');
+            }
+        } catch (err) {
+            setError('Ошибка сети');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
-        <div className="contact_form">
+        <div className="contact_form" ref={ref}>
             <div className="contact_form_container">
-                <h3 className="contact_form_title">ОСТАВЬТЕ ЗАЯВКУ НА СОЗДАНИЕ <br/> САЙТА</h3>
+                <h3 className="contact_form_title">Оставьте заявку на создание сайта</h3>
                 <div className="contact_form_table">
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form onSubmit={handleSubmit} className="contact_form_form">
                         <div className="contact_form_info">
-                            <input type="text" placeholder="Имя*" name="name" className="contact_form_input" required />
-                            <input type="text" placeholder="Телефон*" name="phone" className="contact_form_input" required />
-                            <input type="text" placeholder="Email*" name="email" className="contact_form_input" required />
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Имя*"
+                                className="contact_form_input"
+                                required
+                            />
+                            <input
+                                type="text"
+                                name="phone"
+                                placeholder="Телефон*"
+                                className="contact_form_input"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email*"
+                                className="contact_form_input"
+                                required
+                            />
                         </div>
-                        <button className="send_button" type="submit">
+                        <button
+                            className="send_button"
+                            type="submit"
+                            disabled={isSubmitting}
+                        >
                             Отправить
                         </button>
                     </form>
                 </div>
             </div>
-            {isModalVisible && (
+            {isSubmitted && (
                 <div className="modal-overlay">
                     <div className="modal-content">
-                        <h2>Данные успешно отправлены! <br/>
-                        Мы обязательно скоро свяжемся с вами</h2>
-                        <button onClick={closeModal} className="close-button">Закрыть</button>
+                        <h2>Данные успешно отправлены!</h2>
+                        <button onClick={() => setIsSubmitted(false)} className="close-button">Закрыть</button>
                     </div>
+                </div>
+            )}
+            {error && (
+                <div className="error-message">
+                    <p>{error}</p>
                 </div>
             )}
         </div>
     );
-}
+});
 
 export default ContactForm;
+

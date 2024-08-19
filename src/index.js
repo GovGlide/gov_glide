@@ -5,17 +5,22 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainPage from './pages/main_page/MainPage';
 import AboutUs from "./pages/about_us/AboutUs";
 
-
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+    [
+        {
+            path: '/',
+            element: <MainPage />,
+        },
+        {
+            path: '/about_us',
+            element: <AboutUs />,
+        },
+    ],
     {
-        path: '/main',
-        element: <MainPage/>
-    },
-    {
-        path: '/about_us',
-        element: <AboutUs/>
+        // Установите basename для маршрутизатора
+        basename: '/gov_glide', // Замените на ваш путь
     }
-]);
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +28,7 @@ root.render(
         <RouterProvider router={router} />
     </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
